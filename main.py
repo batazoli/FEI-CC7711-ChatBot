@@ -1,7 +1,7 @@
 from chatbot import ChatBot
 myChatBot = ChatBot()
 #apenas carregar um modelo pronto
-myChatBot.loadModel()
+#myChatBot.loadModel()
 
 #criar o modelo
 myChatBot.createModel()
