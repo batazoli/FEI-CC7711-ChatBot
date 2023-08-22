@@ -32,7 +32,7 @@ class ChatBot:
         nltk.download('wordnet')
         nltk.download('omw-1.4')
 
-        data_file = open('intents.json').read()
+        data_file = open('intents.json', encoding="utf8").read()
         self.intents = json.loads(data_file)
         for intent in self.intents['intents']:
             for pattern in intent['patterns']:
