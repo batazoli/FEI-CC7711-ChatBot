@@ -3,23 +3,24 @@ myChatBot = ChatBot()
 #apenas carregar um modelo pronto
 #myChatBot.loadModel()
 
-#criar o modelo
+#criar o modeloa
 myChatBot.createModel()
 
+#Giovana Ellero (RA: 22.220.003-2)
+#Vagner Batazoli (RA: 22.217.022-7)
 
 
+print("Bem vindo ao Chatbot sobre PIPE FAPESP !!!")
 
-print("Bem vindo ao Chatbot")
-
-
-pergunta = input("como posso te ajudar?")
+print("Olá seja bem-vindo você fala com o Bot PIPE.")
+pergunta = input("Como posso te ajudar?")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
 print(resposta + "   ["+intencao[0]['intent']+"]")
 
 
 while (intencao[0]['intent']!="despedida"):
-    pergunta = input("posso lhe ajudar com algo a mais?")
+    pergunta = input("Mais alguma duvida sobre o PIPE ?")
     resposta, intencao = myChatBot.chatbot_response(pergunta)
     print(resposta + "   [" + intencao[0]['intent'] + "]")
 
-print("Foi um prazer atendê-lo")
+print("Foi um prazer atendê-lo.")
